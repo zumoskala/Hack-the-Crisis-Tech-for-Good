@@ -1,0 +1,103 @@
+/* big tablet to 1200 px (width smaller than 1140 px row) */
+@media only screen and (max-width: 1200px) {
+    .hero-text-box {
+        width: 100%;
+        padding: 0 2%;
+    }
+    
+    .row { padding: 0 2%; }
+} 
+
+
+/* from small tablet to ipad in portrait mode: 768 to 1023 px */
+@media only screen and (max-width: 1023px) {
+    body { font-size: 18px; }
+    
+    section { padding: 60px 0; }
+    
+    .long-copy {
+        width: 80%;
+        margin-left: 10%;
+    }
+    
+    .steps-box {margin-top: 20px;}
+    .works-step:last-of-type { margin-bottom: 60px; }
+    .steps-box:last-child {margin-top: 25px; }
+    .app-screen { width: 50%; }
+    
+    .icon-small { 
+        width: 20px;
+        margin-right: 2px;
+        }
+    .city-feature {font-size: 85%}
+    
+    .plan-box {
+        width: 100%;
+        margin-left: 0%;
+    }
+    
+    .plan-price {
+        font-size: 280%;
+    }
+    
+    .contact-form {width: 90% }
+} 
+
+
+/* small phones to small tablets to 767 px */
+@media only screen and (max-width: 767px) {
+    
+    body {font-size: 16px;}
+    section {padding: 30px 0;}
+    
+    .row, 
+    .hero-text-box {
+        padding: 0 4%;
+    }
+    
+    .col {
+        width: 100%;
+        margin: 0 0 4% 0; 
+    }
+    .main-nav {display: none}
+    
+    .long-copy {
+        width: 100%;
+        margin-left: 0;
+        text-align: justify;
+    }
+    
+    h1 {font-size: 180%;}    
+    h2 {font-size: 150%;}
+    
+    .steps-box:first-child {text-align: center;}
+    
+    .works-step:last-of-type { margin-bottom: 20px; }
+    .works-step {margin-bottom: 20px}
+} 
+
+    .works-step div {
+        height: 40px;
+        width: 40px;
+        padding: 4px;
+        font-size: 150%;
+        margin-right: 15px;
+        border: 1px solid #e67e22;
+        font-size: 120%;
+
+    }
+
+.app-screen {width: 40%;}
+
+/* small phones from 0 to 480 px */
+@media only screen and (max-width: 480px) {
+    
+
+    section {
+        padding: 20px 0;
+    }
+    
+    .contact-form {width: 100%;}
+    
+} 
+

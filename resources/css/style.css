@@ -1,0 +1,582 @@
+
+/* ---------------------------------------------------------------------- */
+/* BASIC SETUP */
+/* ---------------------------------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.clearfix {zoom: 1}
+.clearfix {
+    content: '.';
+    clear: both;
+    display: table;
+}
+
+/* ---------------------------------------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* ---------------------------------------------------------------------- */
+
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto 0 auto;
+}
+
+section {
+    padding: 70px 0;
+}
+
+.box {
+    padding: 1%;
+}
+
+/* ---- HEADINGS ---- */
+
+h1, h2, h3 {  
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+h2:after {
+    display: hidden;
+    height: 1.5px;
+    content: "";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: #06536f;
+}
+
+.ha2 {
+    color: #dedede;
+    text-transform: none;
+    text-align: left;
+    font-size: 160%;
+    margin-bottom: 5px;  
+    
+}
+
+.hash {
+    display: block;
+    float: left;
+    margin-right: 25px;
+    color: #043b4f;
+    font-size: 180%;
+    text-transform: lowercase;
+    font-weight: 400;
+}
+
+
+
+/* ---- PARAGRAPHS ---- */
+
+.long-copy {
+    line-height: 145%;
+    width: 68%;
+    margin-left: 16%;
+
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+    text-align: justify;
+}
+
+/* ---- ICONS ---- */
+
+.icon-big {
+    font-size: 350%;
+    display: block;
+    color: #e67e22;
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+
+.icon-small {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 120%;
+    
+    
+    line-height: 120%;
+    vertical-align: middle;
+    
+    
+    margin-top: -6px;
+    margin-right: 10px;
+}
+
+/* ---- LINKS ---- */
+
+a:link,
+a:visited {
+    color: #e67e22;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #e67e22;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: #555;
+    border-bottom: 1px solid transparent;
+}
+
+
+/* ---- BUTTONS ---- */
+
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s border 0.2s, color 0.2s;
+}
+
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+    background-color: #06536f;
+    border: 1px solid #06536f;
+    color: #fff;    
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #06536f;
+    color: #06536f;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active{
+    background-color: #043b4f;
+    
+}
+
+.btn-full:hover,
+.btn-full:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    border: 1px solid #043b4f;    
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #043b4f;
+    color: #fff;
+}
+
+.btn-kategoria:link,
+.btn-kategoria:visited{
+    display: inline-block;
+    width: 210px;
+    height: 130px;
+    background-color: #06536f;
+    border: 1px solid #0000;    
+    margin: -10px 2px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 50px 0;
+}
+
+.btn-kategoria:hover,
+.btn-kategoria:active{
+    border: 1px solid #fff;    
+    text-align:center;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.tech {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(img/tech.jpg);
+    background-size: cover;
+}
+.sztuka {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(img/sztuka.jpg);
+    background-size: cover;
+}
+.jezyki {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(img/jezyk.jpg);
+    background-size: cover;
+}
+.nauka {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(img/nauka.jpg);
+    background-size: cover;
+}
+.animacje {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(img/animacje.jpg);
+    background-size: cover;
+}
+
+.zoom{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(img/zoom.jpg);
+    background-size: cover;
+}
+
+.zaj1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(img/cos.jpg);
+    background-size: cover;
+}
+
+.zaj2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(img/plany.jpg);
+    background-size: cover;
+}
+
+
+.dodaj {
+    margin-left: 150px;
+}
+
+.michau {
+    float: right;
+    margin-top: -65px;
+}
+
+.zaj {
+    margin-top: 20px;
+}
+
+/* ---------------------------------------------------------------------- */
+/* HEADER */
+/* ---------------------------------------------------------------------- */
+
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(img/tlo.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /*100% of viewport*/
+    background-attachment: fixed;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-55%, 40%);
+}
+
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: font-size 0.5s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    font-size: 110%;
+    font-weight: 400;
+}
+
+
+
+/* ---------------------------------------------------------------------- */
+/* O NAS */
+/* ---------------------------------------------------------------------- */
+
+.section-onas {
+    background-color: #fff;
+}
+
+.section-onas .long-copy {
+    margin-bottom: -30px;
+}
+
+/* ---------------------------------------------------------------------- */
+/* FEATURES */
+/* ---------------------------------------------------------------------- */
+
+.section-features .long-copy {
+    margin-bottom: 30px;
+}
+
+
+/* ---------------------------------------------------------------------- */
+/* OFFERS */
+/* ---------------------------------------------------------------------- */
+
+.box img {
+    width: 100%;
+    height: 160px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.section-oferty h3 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.oferta-info {
+    margin-bottom: 6px;
+    text-align: justify;
+}
+
+.oferta-gwiazdki {
+    margin-top: 15px;
+}
+
+.checked {
+  color: orange;
+}
+
+/* ---------------------------------------------------------------------- */
+/* CONTACT FORM */
+/* ---------------------------------------------------------------------- */
+
+.mniejsze {
+    width: 50%;
+        margin: 0 auto;
+}
+
+.contact-form {
+
+    background-color: #f4f4f4;
+    
+}
+
+.contact-form label{
+    display: inline-block;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 90%;
+    padding: 10px;
+    margin-left: 20px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;  
+    vertical-align: top;
+
+}
+
+.dodaj-foto {
+    margin-left: 20px;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 300;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=checkbox]{
+    margin: 10px 5px 10px 20px;
+}
+
+input[type=submit]{
+    margin-left: 20px;
+}
+
+*:focus {outline: none;}
+
+/* ---------------------------------------------------------------------- */
+/* FOOTER */
+/* ---------------------------------------------------------------------- */
+
+footer {
+    background-color: #333;
+    padding: 30px;
+    font-size: 80%
+}
+
+.footer-nav li {
+    list-style: none;
+    float:left;
+    margin-right: 25px;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.kolpraw {
+    float: right;
+}
+
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited{
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+}
+
+.social-links li a:link, 
+.social-links li a:visited {
+    font-size: 170%;
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-googleplus,
+.ion-social-instagram {
+    transition: color 0.2s;
+}
+
+
+.ion-social-facebook:hover {
+    color: #3b5998;
+}
+
+.ion-social-twitter:hover {
+    color: #1da1f2;
+}
+
+
+.ion-social-googleplus:hover {
+    color: #ea4335;
+}
+
+
+.ion-social-instagram:hover {
+    color: #c32aa3;
+}
+
+
+
+footer p {
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/* ---------------------------------------------------------------------- */
+/* formularz.html */
+/* ---------------------------------------------------------------------- */
+
+.header {
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(img/tlo.jpg);
+    background-size: 350%;
+    background-position:top;
+    height: 50px; 
+    }
+
+.header .main-nav li a {
+    margin-top: 0px;
+    color: #fff;
+    height: 20px;
+}
+
+.header .main-nav {
+    margin-top: 0px;
+}
+
+input[type=number]{
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    margin-left: 32px;
+    border: 1px solid #ccc;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;  
+    vertical-align: top;
+    
+}
+
+.daj-wiek {
+    text-align: left;
+}
+
+.daj-wiek label {
+    margin-left:55px;
+    margin-top: 10px;
+}
+
+

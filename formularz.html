@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    
+    
+    <head>
+        
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+        
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css"> <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">   <link rel=stylesheet type="text/css" href="resources/css/queries.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>#rodzicwdomu</title>
+        
+    </head>
+    <body>
+        
+        <section class="header">
+            <nav>
+                <div class="row">
+                    <ul class="main-nav">
+                        <li><a href="index.html">o akcji</a></li>
+                        <li><a href="oferta.html">zajęcia</a></li>
+                        <li><a href="#">jak to działa?</a></li>
+                        <li><a href="FAQ.html">FAQ</a></li> 
+                        <li><a href="formularz.html">dodaj zajęcia</a></li> 
+                    </ul>    
+                </div> 
+            </nav>
+        </section>
+        
+        <section class="contact-form">
+            <div class="mniejsze">
+                <div class="row">
+                <h2>Dodaj swoją ofertę!</h2>
+                </div>
+
+                <div class="row">
+                    <form method="post" action="#" class="contact-form">
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="name">Wpisz tytuł zajęć</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="text" name="name" id="name" placeholder="Tytuł zajęć" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="wiek">Dla dzieci w jakim wieku?</label>
+                            </div>
+                            <div class="daj-wiek">
+                                <div class="col span-1-of-10">
+                                    <input type="number" name="wiek" id="wiek"  min="1" max="18" required>               
+                                </div>                             
+                                <div class="col span-1-of-10">
+                                    <label for="email"> do </label>              
+                                </div>                            
+                                <div class="col span-1-of-10">
+                                    <input type="number" name="wiek" id="wiek"  min="1" max="18" required>                     </div>           
+                            </div>
+                        </div>                        
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="email">Ile będą trwały zajęcia?</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="email" name="czas" id="czas" placeholder="Czas trwania zajęć" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="find-us">Kategoria usługi</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <select name="find-us" id="find-us">
+                                    <option value="friends">Sztuka</option>
+                                    <option value="search-engine" selected>Gotowanie</option>
+                                    <option value="ad">Korepetycje</option>
+                                    <option value="other">Inne</option>
+
+                                </select>
+                            </div>    
+                        </div>
+
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="txt-ar">Opisz swoje zajęcia</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <textarea name="message" placeholder="Przedstaw zainteresowanym swoją ofertę!" id="txt-ar"></textarea> 
+                            </div>
+                        </div>                       
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="txt-ar">Co będzie potrzebne dzieciom w czasie zajęć?</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <textarea name="message" placeholder="Wypisz potrzebne akcesoria!" id="txt-ar"></textarea> 
+                            </div>
+                        </div>                        
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="txt-ar">Przedstaw się dzieciom i rodzicom</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <textarea name="message" placeholder="Napisz parę słów o sobie!" id="txt-ar"></textarea> 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="img">Dodaj zdjęcia:</label>
+                            </div>
+
+                            <div class="col span-2-of-3">
+                                <input class="dodaj-foto" type="file" id="img" name="img" accept="image/*">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="news">Akceptuję regulamin</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="checkbox" name="reg" id="reg" checked required> Tak
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="name">Imię i nazwisko</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="text" name="name" id="name" placeholder="Twoje imię i nazwisko" required>
+                            </div>
+                        </div>                        
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="name">Numer telefonu</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="text" name="tel" id="tel" placeholder="Podaj numer telefonu" required>
+                            </div>
+                        </div>                        
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="name">Email</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="text" name="email" id="email" placeholder="Podaj adres email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label>&nbsp;</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="submit" value="Prześlij swoją ofertę!"> 
+                            </div>
+                        </div> 
+                        
+                    </form>
+                </div>
+                
+                </div>
+        </section>
+    
+            <footer class="footer">
+            <div class="row">
+                <div class="col span-1-of-2">
+
+                </div>                
+                <div class="col span-1-f-2 kolpraw">
+                    <ul class="social-links">
+                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>                        
+                        <li><a href="#"><i class="ion-social-twitter"></i></a></li>                        
+                        <li><a href="#"><i class="ion-social-googleplus"></i></a></li>                        
+                        <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+                    </ul>
+                </div>            
+            </div>
+            <div class="row">
+                <p>
+                    Copyright &copy; 2020 by NASZA NAZWA. All rights reserved.
+                                        <br>zdjęcia: Freepik.com
+                </p>
+            </div>
+        
+        </footer>
+    </body>
+</html>
+<!--
+
+-->
